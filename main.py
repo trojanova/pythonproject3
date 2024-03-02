@@ -1,6 +1,6 @@
 """
 projekt_3.py: třetí projekt do Engeto Online Python Akademie
-author: Tereza Trojanov8
+author: Tereza Trojanová
 email: trojanovate@gmail.com
 discord: tereza4859
 """
@@ -21,12 +21,12 @@ def validate_input_address(address, csv_file_path):
 	urls_list = []
 
 	for tag in addresses_tables_tr_tags:
-	    a_tags = tag.find_all('a')
-	    if a_tags:
-	        last_a_tag = a_tags[-1]
-	        href = "https://volby.cz/pls/ps2017nss/" + last_a_tag.get('href')
-	        if href:
-	            urls_list.append(href)
+		a_tags = tag.find_all('a')
+		if a_tags:
+			last_a_tag = a_tags[-1]
+			href = "https://volby.cz/pls/ps2017nss/" + last_a_tag.get('href')
+			if href:
+				urls_list.append(href)
 
 	if address not in urls_list:
 		return 0    #invalid address

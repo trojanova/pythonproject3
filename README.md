@@ -1,7 +1,7 @@
 # Election Results Scraper
 
 ## Overview
-The Election Results Scraper is a Python program designed to scrape election result data from the Czech Statistical Office website. It retrieves election results for territorial units based on the provided address and exports them into a CSV file.
+The Election Results Scraper is a Python program designed to scrape election result data from the Czech Statistical Office website. It retrieves election results for territorial units based on the provided address and exports them into a CSV file. Result CSV file contains general statistics (number of registered voters, number of envelopes and number of valid votes) and number of votes for each political party.
 
 ## How It Works
 The program consists of several functions. It first validates the address and CSV file path provided by the user. In case these inputs are invalid, the program stops and ask the user for correction. In case both inputs are valid, the program proceeds to fetch the election results for each territorial unit within selected region. Then it saves the collected data into a CSV file.

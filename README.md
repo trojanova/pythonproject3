@@ -24,8 +24,14 @@ git clone https://github.com/trojanova/pythonproject3
 pip install -r requirements.txt
 ```
 4. Choose the municipality you want to scrape:
-- At the following page: https://volby.cz/pls/ps2017nss/ps3?xjazyk=EN select you preferred municipality - click the X "button" (column Choice of a municipality)
-
+- At the following page: https://volby.cz/pls/ps2017nss/ps3?xjazyk=EN select you preferred municipality - click the X "button" (column Choice of a municipality), f.e. Beroun.
+![Choose municipality](/assets/choose_municipality.png)
+- Here you can preview the results for each territorial unit, that will be later scraped by the program, f. e. Bilikovice>
+![Preview results](/assets/results.png)
 - Copy the absolute URL and set it to the address parameter in `main.py`.
 6. Set csv_file_path to the desired name of the output CSV file.
+![Set arguments](/assets/arguments.png)
 7. Run the script.
+8. The result is imported in you .csv file.
+![Results in csv](/assets/sample_result.png)
+

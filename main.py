@@ -12,8 +12,8 @@ import csv
 
 #check if both arguments are correct
 def validate_input_address(address, csv_file_path):
-	volby_addresses = 'https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ'
-	main_page_response = get(volby_addresses)
+	election_addresses = 'https://volby.cz/pls/ps2017nss/ps3?xjazyk=EN'
+	main_page_response = get(election_addresses)
 	main_page_response_parsed = bs(main_page_response.text, 'html.parser')
 	addresses_tables_tr_tags = main_page_response_parsed.select('table.table tr')
 
@@ -116,6 +116,6 @@ def elections_scraper_main(address, csv_file_path):
 
 #main arguments
 if __name__ == "__main__":
-	address = "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2102"
+	address = "https://volby.cz/pls/ps2017nss/ps32?xjazyk=EN&xkraj=2&xnumnuts=2101"
 	csv_file_path = 'election_results.csv'
 	elections_scraper_main(address, csv_file_path)

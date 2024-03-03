@@ -1,0 +1,4 @@
+{
+  "BASE_URL": "https://volby.cz/pls/ps2017nss/",
+  "csv_file_path": "election_results.csv"
+}
